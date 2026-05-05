@@ -46,12 +46,22 @@ export default function Home() {
             ボーダーコリーがあなたの将来をスマートにガードします。
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <div className="bg-slate-900 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition shadow-lg cursor-pointer">
-               App Store (準備中)
-             </div>
-             <div className="bg-slate-900 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition shadow-lg cursor-pointer">
-               Google Play (準備中)
-             </div>
+            <a 
+              href="https://apps.apple.com/jp/app/moneycollie/id6764232757" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-slate-900 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition shadow-lg text-center cursor-pointer"
+            >
+              App Store
+            </a>
+            <a 
+              href="https://share.google/3AcIlgV1fDPRpbGta"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-slate-900 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition shadow-lg text-center"
+            >
+              Google Play
+            </a>
           </div>
         </div>
       </section>
@@ -134,10 +144,16 @@ export default function Home() {
       </section>
 
       <footer className="py-12 text-center text-slate-500 text-sm">
-        <p className="mb-2">© 2024 MoneyCollie. All rights reserved.</p>
+        <p className="mb-2">© 2026 MoneyCollie. All rights reserved.</p>
         <div className="flex justify-center gap-6">
-          <span className="cursor-pointer hover:text-slate-800">プライバシーポリシー</span>
-          <span className="cursor-pointer hover:text-slate-800">利用規約</span>
+          <a 
+            href="https://sites.google.com/view/moneycollie-privacy/%E3%83%9B%E3%83%BC%E3%83%A0" // 実際のポリシーURLに書き換え
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:text-slate-800 underline underline-offset-4"
+          >
+            プライバシーポリシー
+          </a>
         </div>
       </footer>
     </main>
