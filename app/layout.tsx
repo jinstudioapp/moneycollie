@@ -5,6 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+
   // VercelのURLまたは独自ドメインが確定したらここを書き換えてください
   metadataBase: new URL('https://moneycollie.vercel.app'), 
 
@@ -25,6 +26,11 @@ export const metadata: Metadata = {
     "資産予測 アプリ",
     "マネーコリー"
   ],
+
+  // ★ ここに追加しました
+  verification: {
+    google: "0bGi1X1ItoYoc0cARfm5dI51JKLjPAjJqgi2owv_pAA",
+  },
 
   openGraph: {
     title: 'MoneyCollie - 資産を導く、牧羊犬の家計簿',
