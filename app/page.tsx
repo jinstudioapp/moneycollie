@@ -7,7 +7,16 @@ export default function Home() {
     "name": "MoneyCollie (マネーコリー)",
     "operatingSystem": "iOS, Android",
     "applicationCategory": "FinanceApplication",
-    "description": "30年先までの資産予測とライフプラン設計に特化した、完全ローカル保存型の安心家計簿アプリ。",
+    "softwareVersion": "1.4.7", // pubspec.yamlのバージョンを反映
+    "description": "30年先までの資産予測とライフプラン設計に特化した家計簿アプリ。完全ローカル保存(Hive)でプライバシーを保護。",
+    "author": {
+      "@type": "Organization",
+      "name": "MoneyCollie Project"
+    },
+    "screenshot": [
+      "https://moneycollie.vercel.app/store1.002.png",
+      "https://moneycollie.vercel.app/store1.004.png"
+    ],
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -124,6 +133,24 @@ export default function Home() {
               機種変更時もバックアップ機能でしっかりデータを引き継げます。
             </p>
           </div>
+
+          <div className="space-y-4">
+            <div className="text-3xl">📊</div>
+            <h3 className="text-xl font-bold">本格的なポートフォリオ管理</h3>
+            <p className="text-slate-600 leading-relaxed">
+              「fl_chart」による美しいグラフィック。資産をカテゴリー別に管理し、
+              生活防衛資金、積立、比率など、自分に合った軸での資産形成をシミュレート。
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <div className="text-3xl">🆕</div>
+            <h3 className="text-xl font-bold">進化し続けるツール</h3>
+            <p className="text-slate-600 leading-relaxed">
+              定期的なアップデート(v1.4.x)により、ポートフォリオ機能や資産予測の精度を向上。
+              常に最新の金融情勢に合わせたシミュレーションを提供します。
+            </p>
+          </div>        
 
         </div>
       </section>
