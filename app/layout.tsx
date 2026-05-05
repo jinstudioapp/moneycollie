@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
   // ★ ここに追加しました
   verification: {
-    google: "0bGi1X1ItoYoc0cARfm5dI51JKLjPAjJqgi2owv_pAA",
+    google: "5K1I-elIZAdZCG59mHIDcxfhp8T0hd6tviHZ5RvNm0I",
   },
 
   openGraph: {
