@@ -26,6 +26,7 @@ export default function Home() {
       "端末内保存による究極のプライバシー保護",
       "生活防衛資金を考慮したポートフォリオシミュレーション",
       "ライフイベント（教育費・退職金）の自動算出と資産予測",
+      "インフレによる物価上昇を考慮した資産予測",
       "預貯金と運用資産（利回り）を分けた高度な計算",
       "通知・ポップアップなしのストレスフリーな操作感"
     ]
@@ -43,16 +44,15 @@ export default function Home() {
       <section className="px-6 py-20 text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-4xl mx-auto">
           <div className="inline-block px-4 py-1 mb-6 text-sm font-semibold text-blue-600 bg-blue-100 rounded-full">
-            完全無料で全ての機能を開放
+            完全無料で全ての機能を使い放題
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-slate-900 tracking-tight">
-            あなたの資産を導く、<br />
-            一番賢いパートナー。
+            あなたの資産を予測するパートナー
           </h1>
           <p className="text-xl mb-10 text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            MoneyCollieは、データの外部送信なし。 
-            「今」の家計管理から「30年後」の資産予測まで、
-            ボーダーコリーがあなたの将来をスマートにガードします。
+            MoneyCollieは、データの外部送信なし。 <br />
+            「今」の家計簿から「30年後」の資産予測まで、<br />
+            あなたの将来を考えるシミュレーション。
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
@@ -75,82 +75,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5つのコア・ベネフィット */}
+      {/* 5つのコア・ベネフィット（6つに整理） */}
       <section className="max-w-6xl mx-auto py-24 px-6">
-        <h2 className="text-3xl font-bold text-center mb-16">なぜ MoneyCollie が選ばれるのか</h2>
+        <h2 className="text-3xl font-bold text-center mb-16 text-slate-900">
+          MoneyCollie が選ばれる 6 つの理由
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           
+          {/* 1. プライバシー */}
           <div className="space-y-4">
             <div className="text-3xl">🛡️</div>
-            <h3 className="text-xl font-bold">究極のプライバシー</h3>
+            <h3 className="text-xl font-bold text-slate-900">究極のプライバシー保護</h3>
             <p className="text-slate-600 leading-relaxed">
-              家計データはクラウドではなく、あなたの端末内(Hive)のみに高速保存。
+              家計データはクラウドに送信せず、端末内(Hive)のみに暗号化保存。
               個人情報の流出リスクを根本から排除した、もっとも安心できる設計です。
             </p>
           </div>
 
+          {/* 2. 資産予測 */}
           <div className="space-y-4">
             <div className="text-3xl">📈</div>
-            <h3 className="text-xl font-bold">30年先を精密に予測</h3>
+            <h3 className="text-xl font-bold text-slate-900">30年先を精密にシミュレート</h3>
             <p className="text-slate-600 leading-relaxed">
-              預貯金と、利回りのつく運用資産を分けてシミュレート。
-              積立額や比率に加え、「生活防衛資金」を軸にした高度なポートフォリオ設定も可能です。
+              「fl_chart」による美しいグラフで、30年先までの資産推移を可視化。
+              預貯金と運用資産の利回りを分けた、高度な将来予測が可能です。
             </p>
           </div>
 
+          {/* 3. ライフプラン */}
           <div className="space-y-4">
             <div className="text-3xl">🎓</div>
-            <h3 className="text-xl font-bold">ライフプランを自動計算</h3>
+            <h3 className="text-xl font-bold text-slate-900">ライフプラン自動算出</h3>
             <p className="text-slate-600 leading-relaxed">
-              子供の入学金や学費、定年退職などのイベントを登録するだけで、将来の支出を自動反映。
-              個別のライフイベントも細かくカスタマイズ可能です。
+              お子様の入学金や学費、退職金などを自動設定。
+              複雑なライフイベントも、簡単な登録だけで将来の支出に反映されます。
             </p>
           </div>
 
-          <div className="space-y-4">
-            <div className="text-3xl">🚀</div>
-            <h3 className="text-xl font-bold">ノイズレスな操作感</h3>
-            <p className="text-slate-600 leading-relaxed">
-              アプリを開いて即記録。煩わしい通知、ポップアップ、強制的な広告は一切ありません。
-              「家計簿をつける」という習慣を邪魔しないUXを追求。
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <div className="text-3xl">🎨</div>
-            <h3 className="text-xl font-bold">あなただけの家計簿</h3>
-            <p className="text-slate-600 leading-relaxed">
-              カテゴリーごとのアイコン・色・名前は自由自在。
-              背景色も変更可能で、可愛いボーダーコリーと共に楽しく資産管理を続けられます。
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <div className="text-3xl">📱</div>
-            <h3 className="text-xl font-bold">安心のバックアップ</h3>
-            <p className="text-slate-600 leading-relaxed">
-              データ収集(Firebase)はいつでもオフに設定可能。
-              機種変更時もバックアップ機能でしっかりデータを引き継げます。
-            </p>
-          </div>
-
+          {/* 4. ポートフォリオ */}
           <div className="space-y-4">
             <div className="text-3xl">📊</div>
-            <h3 className="text-xl font-bold">本格的なポートフォリオ管理</h3>
+            <h3 className="text-xl font-bold text-slate-900">戦略的な資産形成をサポート</h3>
             <p className="text-slate-600 leading-relaxed">
-              「fl_chart」による美しいグラフィック。資産をカテゴリー別に管理し、
-              生活防衛資金、積立、比率など、自分に合った軸での資産形成をシミュレート。
+              生活防衛資金を軸にしたポートフォリオ管理。
+              理想の資産比率や積立額をシミュレーションし、迷いのない資産形成を。
             </p>
           </div>
 
+          {/* 5. UI/UX */}
           <div className="space-y-4">
-            <div className="text-3xl">🆕</div>
-            <h3 className="text-xl font-bold">進化し続けるツール</h3>
+            <div className="text-3xl">🚀</div>
+            <h3 className="text-xl font-bold text-slate-900">ノイズレスな操作体験</h3>
             <p className="text-slate-600 leading-relaxed">
-              定期的なアップデート(v1.4.x)により、ポートフォリオ機能や資産予測の精度を向上。
-              常に最新の金融情勢に合わせたシミュレーションを提供します。
+              広告や通知、ポップアップを一切排除。
+              開いて即記録できる軽快さと、自由にカスタムできるアイコン・背景色で、管理が楽しくなります。
             </p>
-          </div>        
+          </div>
+
+          {/* 6. 信頼性 */}
+          <div className="space-y-4">
+            <div className="text-3xl">✨</div>
+            <h3 className="text-xl font-bold text-slate-900">安心のバックアップと進化</h3>
+            <p className="text-slate-600 leading-relaxed">
+              Firebase通信のオフ設定や手動バックアップに対応。
+              定期的なアップデート(v1.4.7)で、常に最新の家計管理を提供します。
+            </p>
+          </div>
 
         </div>
       </section>
@@ -164,7 +154,7 @@ export default function Home() {
           </p>
           <p className="text-lg text-slate-600 leading-relaxed">
             「MoneyCollie」もまた、複雑なお金の動きを整理し、
-            将来の不安という霧の中から、あなたを安心できる未来へと導くために生まれました。
+            将来の不安という霧の中から、あなたを安心できる未来へと導くために生まれました。<br />
             データはあなたの手元に。信頼は私たちの設計に。
           </p>
         </div>

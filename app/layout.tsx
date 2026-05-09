@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'MoneyCollie - 資産を導く、牧羊犬の家計簿',
+    title: 'MoneyCollie - 30年先の資産を予測する家計簿',
     description: 'データ送信なしの安心感。30年後の資産が見える、次世代の家計簿アプリ。',
     url: 'https://moneycollie.vercel.app',
     siteName: 'MoneyCollie',
