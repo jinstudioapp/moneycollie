@@ -161,7 +161,7 @@ export default function Home() {
       </section>
 
       <footer className="py-12 text-center text-slate-500 text-sm">
-        <p className="mb-2">© 2026 MoneyCollie. All rights reserved.</p>
+        <p className="mb-2">© 2026 JIN Studio. All rights reserved.</p>
         <div className="flex justify-center gap-6">
           <a 
             href="https://sites.google.com/view/moneycollie-privacy/%E3%83%9B%E3%83%BC%E3%83%A0" // 実際のポリシーURLに書き換え
